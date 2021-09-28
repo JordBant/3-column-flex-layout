@@ -21,7 +21,8 @@ Parent Rule Sets
     margin-bottom: 8%;
     /* ---Flex--- */
     display: flex;
-    border: green 2px solid;
+    border: cyan 2px solid;
+    justify-content: center;
 }
 
 #card
@@ -31,6 +32,7 @@ Parent Rule Sets
     flex-direction: column;
     /* ---Dimensions--- */
     padding: 2.2em;
+    border: red 3px solid;
 }
 
 /* 
@@ -39,6 +41,7 @@ Child Rule Sets
 ========================
 */
 
+
 /* All Children of flex-container 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
 .flex-container > *
@@ -46,7 +49,8 @@ Child Rule Sets
     flex-basis: 100%;
 }
 
-.sedan
+/* ---Individual Card Names--- */
+.sedan 
 {
     border: blue 2px solid;
 }
@@ -60,8 +64,10 @@ Child Rule Sets
 {
     border: green 2px solid;
 }
+/* ---------------------------- */
 
-/* All Children of cards
+
+/* All Children of #cards
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
 #card > *
 {
@@ -77,6 +83,5 @@ Child Rule Sets
 
 #btn-more
 {
-
     width: 100px;
 }
