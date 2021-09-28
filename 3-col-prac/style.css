@@ -1,0 +1,82 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+============================
+Parent Rule Sets
+============================
+*/
+
+.flex-container
+{
+    /* ---Dimensions--- */
+    height: 70vh;
+    width: 70vw;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    /* ---Flex--- */
+    display: flex;
+    border: green 2px solid;
+}
+
+#card
+{
+    /* ---Flex--- */
+    display: flex;
+    flex-direction: column;
+    /* ---Dimensions--- */
+    padding: 2.2em;
+}
+
+/* 
+========================
+Child Rule Sets
+========================
+*/
+
+/* All Children of flex-container 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
+.flex-container > *
+{
+    flex-basis: 100%;
+}
+
+.sedan
+{
+    border: blue 2px solid;
+}
+
+.suv
+{
+    border: orange 2px solid;
+}
+
+.lux
+{
+    border: green 2px solid;
+}
+
+/* All Children of cards
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
+#card > *
+{
+    border: 1px red solid;
+    font-size: 12px;
+    margin: 10%;
+}
+
+#card > p
+{
+    width: auto;
+}
+
+#btn-more
+{
+
+    width: 100px;
+}
