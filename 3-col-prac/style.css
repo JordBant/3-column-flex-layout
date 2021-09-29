@@ -30,9 +30,9 @@ Parent Rule Sets
     /* ---Flex--- */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     /* ---Dimensions--- */
-    padding: 2.2em;
-    border: red 3px solid;
+    padding: 30px;
 }
 
 /* 
@@ -49,7 +49,15 @@ Child Rule Sets
     flex-basis: 100%;
 }
 
-/* ---Individual Card Names--- */
+/* All Children of #card (or the sections) 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
+
+#card > *
+{
+    margin: 10%;
+    font-size: clamp();
+}
+
 .sedan 
 {
     border: blue 2px solid;
@@ -64,24 +72,9 @@ Child Rule Sets
 {
     border: green 2px solid;
 }
-/* ---------------------------- */
-
-
-/* All Children of #cards
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
-#card > *
-{
-    border: 1px red solid;
-    font-size: 12px;
-    margin: 10%;
-}
-
-#card > p
-{
-    width: auto;
-}
 
 #btn-more
 {
-    width: 100px;
+    top: ;
+    width: 50%;
 }
