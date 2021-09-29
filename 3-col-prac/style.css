@@ -32,7 +32,8 @@ Parent Rule Sets
     flex-direction: column;
     justify-content: center;
     /* ---Dimensions--- */
-    padding: 30px;
+    padding: 2%;
+    position: relative;
 }
 
 /* 
@@ -54,8 +55,16 @@ Child Rule Sets
 
 #card > *
 {
-    margin: 10%;
-    font-size: clamp();
+    margin: 5%;
+    font-size: clamp(0.8rem, 1.7vh, 2rem);
+    border: chocolate 2px solid;
+}
+
+
+#card > :first-child /* Selects all header tags */
+{
+    font-size: clamp(1.0rem, 5vh, 1.7rem);
+    font-weight: 200;
 }
 
 .sedan 
@@ -75,6 +84,6 @@ Child Rule Sets
 
 #btn-more
 {
-    top: ;
+    margin-top: 28%;
     width: 50%;
 }
