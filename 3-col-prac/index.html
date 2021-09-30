@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">    <title>Document</title>
 </head>
 <body>
     <main class="flex-container">
         <section class="sedan" id="card">
-            <img src="icon-sedans.svg" alt="">
+            <img src="icon-sedans.svg" alt="" id="logo">
             <!-- Font weight, family for headers are 
             700
             [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
@@ -18,6 +20,10 @@
             Font weight, family, size for paragraphs are 
             400
             Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+
+            Sedan Background Color - Bright orange: hsl(31, 77%, 52%)
+            SUV Background Color - Dark cyan: hsl(184, 100%, 22%)
+            Luxury Background Color - Very dark cyan: hsl(179, 100%, 13%)
             -->
             <h1>Sedans</h1> 
             <p>
@@ -25,20 +31,20 @@
                 Odio molestias consequuntur ea voluptatibus beatae. 
                 Minus fugit velit illo eius perferendis optio dolorem sed quasi omnis?
             </p>
-            <button id="btn-more">Learn More</button>
+            <button class = "btn-1" id="btn-more">Learn More</button>
         </section>
         <section class="suv" id="card"> 
-            <img src="icon-suvs.svg" alt="">
+            <img src="icon-suvs.svg" alt="" id="logo">
             <h2>SUVS</h2>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                 At earum ducimus adipisci rem! 
                 Autem accusantium nostrum commodi cum praesentium ut eveniet unde dolor, inventore molestias!
             </p>
-            <button id="btn-more">Learn More</button>
+            <button class = "btn-2" id="btn-more">Learn More</button>
         </section>
         <section class="lux" id="card">
-            <img src="icon-luxury.svg" alt="">
+            <img src="icon-luxury.svg" alt="" id="logo">
             <h3>Luxury</h3>
             <p> 
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -46,7 +52,7 @@
                 Corporis, officia reprehenderit impedit beatae est accusantium corrupti? 
                 Reprehenderit, non nemo!
             </p>
-            <button id="btn-more">Learn More</button>
+            <button class = "btn-3" id="btn-more">Learn More</button>
         </section>
     </main>
 </body>

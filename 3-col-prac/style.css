@@ -57,29 +57,42 @@ Child Rule Sets
 {
     margin: 5%;
     font-size: clamp(0.8rem, 1.7vh, 2rem);
+
+    /* Will change the aesthics of the paragraphs in next rule set */
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
     border: chocolate 2px solid;
 }
 
 
 #card > :first-child /* Selects all header tags */
 {
+    font-family: 'Big Shoulders Display', cursive;
     font-size: clamp(1.0rem, 5vh, 1.7rem);
-    font-weight: 200;
 }
 
 .sedan 
 {
     border: blue 2px solid;
+    background: hsl(31, 77%, 52%);
 }
 
 .suv
 {
     border: orange 2px solid;
+    background: hsl(184, 100%, 22%);
 }
 
 .lux
 {
     border: green 2px solid;
+    background: hsl(179, 100%, 13%);
+}
+
+#logo
+{
+    width: 50;
+    height: 50%;
 }
 
 #btn-more
